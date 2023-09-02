@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "23280298804",
+    "project_id": "mytotirr-whass",
+    "storage_bucket": "mytotirr-whass.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23280298804:android:835a2d47a9233cbb95d361",
+        "android_client_info": {
+          "package_name": "com.example.whatsapp_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23280298804-6thf52j9jj8cosenu5iv4br6550d7076.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.whatsapp_clone",
+            "certificate_hash": "004a81b762e267f1d0eb695a1ce5dce3b29c6019"
+          }
+        },
+        {
+          "client_id": "23280298804-g9rm4dkg7f2a9931r418kt5u12o4c754.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAomPOaS8V-J3-PEA9ueL2dJwhDzAP9w-c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23280298804-g9rm4dkg7f2a9931r418kt5u12o4c754.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "23280298804-irj06e6559pa6t1kocr9tja6mhfehtgk.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.whatsappClone"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
