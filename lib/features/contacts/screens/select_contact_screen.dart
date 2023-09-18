@@ -8,7 +8,7 @@ import 'package:whatsapp_clone/features/contacts/controller/select_contact_contr
 
 class SelectContactScreen extends ConsumerWidget {
   static const String routename = 'select-contact';
-  const SelectContactScreen({super.key});
+
 
   void selectcontact(
       WidgetRef ref, Contact selectedcontact, BuildContext context) {

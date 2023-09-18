@@ -8,7 +8,7 @@ import 'package:whatsapp_clone/features/auth/controller/auth_controller.dart';
 
 class loginscreen extends ConsumerStatefulWidget {
   static const routename = '/login-screen';
-  const loginscreen({super.key});
+
 
   @override
   ConsumerState<loginscreen> createState() => _loginscreenState();

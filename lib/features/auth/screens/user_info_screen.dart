@@ -7,7 +7,7 @@ import 'package:whatsapp_clone/features/auth/controller/auth_controller.dart';
 
 class UserinformationScreen extends ConsumerStatefulWidget {
   static const String routename = '/user-info';
-  const UserinformationScreen({super.key});
+  
 
   @override
   ConsumerState<UserinformationScreen> createState() =>

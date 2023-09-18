@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/Color.dart';
 
 class WebSearchBar extends StatelessWidget {
-  const WebSearchBar({super.key});
+ 
 
   @override
   Widget build(BuildContext context) {

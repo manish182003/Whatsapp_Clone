@@ -3,7 +3,7 @@ import 'package:whatsapp_clone/Color.dart';
 import 'package:whatsapp_clone/info.dart';
 
 class WebChatAppBar extends StatelessWidget {
-  const WebChatAppBar({super.key});
+
 
   @override
   Widget build(BuildContext context) {

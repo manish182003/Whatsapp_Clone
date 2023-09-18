@@ -4,7 +4,9 @@ import 'package:flutter/scheduler.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:whatsapp_clone/Models/message.dart';
-import 'package:whatsapp_clone/common/widget/loader.dart'; 
+import 'package:whatsapp_clone/common/Provider/Mesaage_Reply_Provider.dart';
+import 'package:whatsapp_clone/common/enum/message_enum.dart';
+import 'package:whatsapp_clone/common/widget/loader.dart';
 import 'package:whatsapp_clone/features/chat/controller/chat_controller.dart';
 import 'package:whatsapp_clone/widgets/mymessagecard.dart';
 import 'package:whatsapp_clone/widgets/sender_message_card.dart';
@@ -26,6 +28,20 @@ class _ChatListState extends ConsumerState<ChatList> {
   void dispose() {
     super.dispose();
     messagecontroller.dispose();
+  }
+
+  onMessageswipe(
+    String Message,
+    bool isMe,
+    MessageEnum messageEnum,
+  ) {
+    ref.read(messageReplyProvider.state).update(
+          (state) => MessageReply(
+            Message,
+            isMe,
+            messageEnum,
+          ),
+        );
   }
 
   @override
@@ -52,11 +68,29 @@ class _ChatListState extends ConsumerState<ChatList> {
                 return MyMessageCard(
                   message: messagedata.text,
                   date: timesent,
+                  type: messagedata.type,
+                  repliedtext: messagedata.repliedMessage,
+                  username: messagedata.replyto,
+                  repliedMessageType: messagedata.repliedMessageType,
+                  onLeftSwipe: () {
+                    onMessageswipe(messagedata.text, true, messagedata.type);
+                  },
                 );
               }
               return SenderMessageCard(
                 message: messagedata.text,
                 date: timesent,
+                type: messagedata.type,
+                repliedtext: messagedata.repliedMessage,
+                username: messagedata.replyto,
+                repliedMessageType: messagedata.repliedMessageType,
+                onRightSwipe: () {
+                  onMessageswipe(
+                    messagedata.text,
+                    false,
+                    messagedata.type,
+                  );
+                },
               );
             },
           );

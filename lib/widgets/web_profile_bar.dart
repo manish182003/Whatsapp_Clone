@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/Color.dart';
 
 class WebProfileBar extends StatelessWidget {
-  const WebProfileBar({super.key});
+ 
 
   @override
   Widget build(BuildContext context) {

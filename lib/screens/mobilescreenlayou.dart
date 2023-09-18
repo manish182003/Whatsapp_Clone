@@ -6,7 +6,7 @@ import 'package:whatsapp_clone/features/contacts/screens/select_contact_screen.d
 import 'package:whatsapp_clone/widgets/contact_list.dart';
 
 class MobileScreenLayout extends ConsumerStatefulWidget {
-  const MobileScreenLayout({super.key});
+ 
 
   @override
   ConsumerState<MobileScreenLayout> createState() => _MobileScreenLayoutState();

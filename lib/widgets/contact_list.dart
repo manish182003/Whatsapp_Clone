@@ -8,7 +8,7 @@ import 'package:whatsapp_clone/features/chat/controller/chat_controller.dart';
 import 'package:whatsapp_clone/features/chat/screens/mobile_chat_screen.dart';
 
 class Contactlist extends ConsumerWidget {
-  const Contactlist({super.key});
+
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

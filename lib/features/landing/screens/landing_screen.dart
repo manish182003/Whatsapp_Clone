@@ -4,7 +4,7 @@ import 'package:whatsapp_clone/common/widget/custom_button.dart';
 import 'package:whatsapp_clone/features/auth/screens/login_screen.dart';
 
 class LandingScreen extends StatelessWidget {
-  const LandingScreen({super.key});
+ 
 
   @override
   Widget build(BuildContext context) {

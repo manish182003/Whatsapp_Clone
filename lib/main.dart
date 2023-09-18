@@ -17,13 +17,13 @@ void main() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(
     ProviderScope(
-      child: const MainApp(),
+      child:  MainApp(),
     ),
   );
 }
 
 class MainApp extends ConsumerWidget {
-  const MainApp({super.key});
+
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

@@ -7,7 +7,7 @@ import 'package:whatsapp_clone/widgets/web_search_bar.dart';
 import 'package:whatsapp_clone/widgets/webchatappbar.dart';
 
 class WebScreenLayout extends StatelessWidget {
-  const WebScreenLayout({super.key});
+
 
   @override
   Widget build(BuildContext context) {
